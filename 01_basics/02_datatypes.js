@@ -1,4 +1,4 @@
-"use strict";
+"use strict";// treat all js code as newer version
 
 // let name="Siddharth";
 // let age= 23;
