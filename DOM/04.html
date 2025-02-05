@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Document Object Manipulation</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+
+    // to add an content 
+    
+    function addLanguage(languageName){
+        const li = document.createElement('li')
+        li.innerHTML = `${languageName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage('Python')
+    addLanguage('TypeScript')
+
+    function addOptimisedLanguage(languageName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(languageName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptimisedLanguage('Artificial Intelligence')
+
+    // to edit an element 
+
+        const fourthChild = document.querySelector('li:nth-Child(4)')
+        const changedLi = document.createElement('li');
+        changedLi.textContent = 'Golang'
+        fourthChild.replaceWith(changedLi)
+
+        const firstChild = document.querySelector('li:first-child')
+        const newLi = document.createElement('li')
+        newLi.textContent = 'TypeScript' 
+        firstChild.replaceWith(newLi)
+
+        // to remove an element 
+
+        const lastChild = document.querySelector('li:last-child')
+        lastChild.remove()
+</script>
+</html>

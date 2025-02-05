@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    const h1 = document.createElement('h1')
+    console.log(h1);
+    div.setAttribute('title', 'my new title')
+    div.style.backgroundColor = "orange"
+    div.className = 'myClass'
+    div.padding = '12px'
+    div.id = Math.round(Math.random() * 10 + 1)
+    // div.innerText = `hey there I'm learning with chai or code`  // this style is not preferred
+    
+    // div.id = 'myId'
+    const myNewText = document.createTextNode('This is used when we want to create a node or write something in an element')
+    console.log(myNewText);
+    div.appendChild(myNewText)
+
+    document.body.appendChild(div)
+</script>
+</html>
