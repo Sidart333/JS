@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous</title>
+</head>
+<body>
+    <h1>This is siddharth</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log('hey we are learning javascript');
+        
+    // }, 2000)
+
+    // const saySiddharth = function(){
+    //     console.log('hey siddharth');
+    // }
+
+    // setTimeout(saySiddharth,2000)
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = 'I m learning best javascript series'
+    }
+
+    // setTimeout(changeText, 2000)
+
+    const changeMe = setTimeout(changeText, 2000)
+    document.querySelector('#stop').addEventListener('click', function(){
+         clearTimeout(changeMe)
+        console.log('stopped');
+    }) 
+
+</script>
+</html>
