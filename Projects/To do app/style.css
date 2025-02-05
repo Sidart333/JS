@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.container{
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+    font-family: "Roboto", serif;
+}
+
+
+
+ul{
+    padding: 0;
+}
+
+ul li{
+    list-style-type: none;
+    background-color: #d3d3d3;
+    padding: 5px;
+    border-radius: 10px;
+    /* margin: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.deleteTask{
+    padding: 8px 20px 8px 20px;
+    background-color: #C97B84;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type='text']{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    max-width: 500px;
+    padding: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#addTaskButton{
+    padding: 8px 20px 8px 20px;
+    color: #fff;
+    background-color: #52AA5E;
+    border-radius: 5px;
+    border: none;
+}

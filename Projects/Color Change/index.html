@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainContainer{
+            max-width: 768px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .button{
+            border: 1px solid black;
+            padding: 50px;
+        }
+        .buttons{
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #grey{
+            background-color: grey;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #green{
+            background-color: green;
+        }
+        #blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <h2>Color Scheme Switcher</h2>
+        <div class="buttons">
+        <div class="button" id="grey"></div>
+        <div class="button" id="yellow"></div>
+        <div class="button" id="green"></div>
+        <div class="button" id="blue"></div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
